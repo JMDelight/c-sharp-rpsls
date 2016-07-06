@@ -6,7 +6,9 @@ namespace rslps.Objects
     public string rslpsFight(int choiceOne, int choiceTwo)
     {
       string result;
-      result = "Tie";
+      if (choiceOne-choiceTwo == 1 || choiceOne-choiceTwo == 2) result = "Player One Wins";
+
+      else result = "Tie";
       return result;
     }
   }
