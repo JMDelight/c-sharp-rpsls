@@ -19,7 +19,7 @@ namespace rslps.Objects
     public void rlspsFight_ScissorsRock_PlayerOneWins()
     {
       //Arrange
-      string expectedResult = "Player One Wins";
+      string expectedResult = "Player Two Wins";
       rslpsGame testGame = new rslpsGame();
       //Act
       string result = testGame.rslpsFight(1,0);
@@ -31,7 +31,7 @@ namespace rslps.Objects
     public void rlspsFight_LizardRock_PlayerOneWins()
     {
       //Arrange
-      string expectedResult = "Player One Wins";
+      string expectedResult = "Player Two Wins";
       rslpsGame testGame = new rslpsGame();
       //Act
       string result = testGame.rslpsFight(2,0);
@@ -43,7 +43,7 @@ namespace rslps.Objects
     public void rlspsFight_RockScissors_PlayerTwoWins()
     {
       //Arrange
-      string expectedResult = "Player Two Wins";
+      string expectedResult = "Player One Wins";
       rslpsGame testGame = new rslpsGame();
       //Act
       string result = testGame.rslpsFight(0,1);
@@ -55,7 +55,7 @@ namespace rslps.Objects
     public void rlspsFight_RockLizard_PlayerTwoWins()
     {
       //Arrange
-      string expectedResult = "Player Two Wins";
+      string expectedResult = "Player One Wins";
       rslpsGame testGame = new rslpsGame();
       //Act
       string result = testGame.rslpsFight(0,2);
