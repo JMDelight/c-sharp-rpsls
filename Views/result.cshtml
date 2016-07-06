@@ -1,0 +1,26 @@
+<h1>Let's play Rock Paper Scissors Lizard Spock!</h1>
+<h4>Choose your option:</h4>
+<form action="/result" method="post">
+  <input type="hidden" name="player-choice" value="0">
+  <button type="submit">Rock</button>
+</form>
+<form action="/result" method="post">
+  <input type="hidden" name="player-choice" value="3">
+  <button type="submit">Paper</button>
+</form>
+<form action="/result" method="post">
+  <input type="hidden" name="player-choice" value="1">
+  <button type="submit">Scissors</button>
+</form>
+<form action="/result" method="post">
+  <input type="hidden" name="player-choice" value="2">
+  <button type="submit">Lizard</button>
+</form>
+<form action="/result" method="post">
+  <input type="hidden" name="player-choice" value="4">
+  <button type="submit">Spock</button>
+</form>
+
+<p>You chose @Model.GetChoiceOne()</p>
+<p>The computer chose @Model.GetChoiceTwo()</p>
+<h3>@Model.rslpsFight()</h3>

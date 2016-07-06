@@ -8,9 +8,9 @@ namespace rslps.Objects
     {
       // Arrange
       string expectedResult = "Tie";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(0,0);
       //Act
-      string result = testGame.rslpsFight( 0, 0);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -20,9 +20,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player Two Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(1,0);
       //Act
-      string result = testGame.rslpsFight(1,0);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -32,9 +32,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player Two Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(2,0);
       //Act
-      string result = testGame.rslpsFight(2,0);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -44,9 +44,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player One Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(0,1);
       //Act
-      string result = testGame.rslpsFight(0,1);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -56,9 +56,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player One Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(0,2);
       //Act
-      string result = testGame.rslpsFight(0,2);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -68,9 +68,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player One Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(4,0);
       //Act
-      string result = testGame.rslpsFight(4,0);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -80,9 +80,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player One Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(4,1);
       //Act
-      string result = testGame.rslpsFight(4,1);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -92,9 +92,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player Two Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(1,4);
       //Act
-      string result = testGame.rslpsFight(1,4);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
@@ -104,9 +104,9 @@ namespace rslps.Objects
     {
       //Arrange
       string expectedResult = "Player Two Wins";
-      rslpsGame testGame = new rslpsGame();
+      rslpsGame testGame = new rslpsGame(1,5);
       //Act
-      string result = testGame.rslpsFight(1,5);
+      string result = testGame.rslpsFight();
       //Assert
       Assert.Equal(expectedResult, result);
     }
